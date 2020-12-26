@@ -1,0 +1,61 @@
+<br>
+<br>
+<br>
+<h1 class="text-center">
+  My Products:
+</h1>
+<br>
+<br>
+
+    
+<div class="row" >
+    <div class="col-lg-4 text-center">
+            <img width="450px" height="400px" src="http://localhost:3000/{{products.productImagePath}}" alt="">
+        </div>
+
+
+    <div class="col-lg-8  bg-gray">
+       <h1>
+          Name : {{products.name}}
+       </h1>
+       <hr>
+       <h3>
+         Category : {{products.category.name}}
+       </h3>
+       <hr>
+       <span>
+         Price : {{products.price}}Rs.
+       </span>
+       <hr>
+       <p>
+        Description : {{products.description}}
+       </p>
+       <h4>
+           Select Qty:
+       </h4>
+       <span>
+           <select name="" id="" #ingre_qty>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+           </select>
+       </span>
+       <hr>
+       <button (click)="addTocart()" class="btn btn-dark text-light"> 
+            Add to Cart  
+       </button>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div  class="text-center" class="col-lg-12 text-center">
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <h6>Copyright &copy.</h6> <h6>Powered By IronForge</h6>
+      </div>
+    </footer>
+</div>

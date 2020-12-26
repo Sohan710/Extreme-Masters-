@@ -1,0 +1,44 @@
+<br>
+
+<h1 class="text-left">
+    My Products:
+</h1>
+<br>
+<br>
+<div class="row">
+
+  
+      <div class="col-lg-6 text-center" *ngFor="let i of products">
+       
+        <a routerLink="/product-detail/{{i._id}}">
+                  <h2>
+                      {{i.name}}
+                  </h2>
+
+                  <img width="400px" height="400px" src="http://localhost:3000/{{i.productImagePath}}" alt="">
+                  <p>
+                   Descrption:   {{i.description}}
+                  </p>
+
+                  <h1>
+                    Price : {{i.price}} Rs.
+                  </h1>
+                  <h1>
+                    Stock : {{i.stock}} Qty.
+                  </h1>
+                </a>
+                <hr>
+      </div>
+      
+<br>
+<br>
+<br>
+<br> 
+</div>
+<div  class="text-center" class="col-lg-12 text-center">
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <h6>Copyright & Copy.</h6> <h6>Powered By IronForge</h6>
+      </div>
+    </footer>
+  </div>

@@ -1,0 +1,43 @@
+<form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+<div id="login-box">
+    <div class="left">
+      <h2 style="color:white;">Registration</h2>
+      
+      <div class="form-group">
+        <input class="form-control"  ngModel type="text" name="name" placeholder="Name" id="">
+      </div>
+      <div class="form-group">
+        <input class="form-control"  ngModel type="email" name="email" placeholder="Email" id="">
+      </div>
+      <div class="form-group">
+        <input class="form-control"  ngModel  type="password" name="password" placeholder="Password" id="">
+      </div>
+      <div class="form-group">
+        <input class="form-control"  ngModel type="text" name="address" placeholder="Address" id="">
+      </div>
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-light">
+            Register
+        </button>
+        <br>
+        <br>
+      </div>
+    </div>
+    
+    <div class="right">
+      <span class="loginwith">Sign in with<br />social network</span>
+      
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google">Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
+  </div>
+</form> 
+  <div  class="text-center" class="col-lg-12 text-center">
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <h6>Copyright &copy.</h6> <h6>Powered By IronForge</h6>
+      </div>
+    </footer>
+    </div>

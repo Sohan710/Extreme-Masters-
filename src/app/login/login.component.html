@@ -1,0 +1,39 @@
+<form #myform="ngForm" (submit)="loginClicked(myform)">
+<div class="login">
+    <div class="form">
+      <h2>Welcome To ExtremeMasters</h2>
+      <div class="form-group">
+        <input class="form-control" type="email" name="email" ngModel placeholder="Email" id="email">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="password" name="password" ngModel placeholder="Password" id="password">
+      </div>
+      <div class="form-group text-center" class="col-lg-4">
+        <button type="submit" class="btn btn-light">
+            Login
+        </button>
+      </div>
+      <div class="or">Or</div>
+      <br>
+      <br>
+      <br>
+    <div class="col-lg-4">
+      <a routerLink="/register" class="btn btn-light" > 
+        Register
+      </a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+</div>
+</form>
+<div  class="col-lg-12 text-center">
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <h6>Copyright &copy.</h6> <h6>Powered By IronForge</h6>
+    </div>
+  </footer>
+  </div>
+
+
